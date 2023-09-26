@@ -61,3 +61,32 @@ print("string" != "string")
 car = "AUDI"
 print("'car.lower()' is equal to 'audi'")
 print(car.lower() == "audi")
+
+
+numbers = [17, 18, 19]
+print('\nNumerical test:')
+print(17 == 17)
+print(17 == 18)
+print(17 != 18)
+print(17 != 17)
+print(18 > 17)
+print(18 < 17)
+print(19 >= 18)
+print(19 <= 18)
+
+age = 20
+day = 17
+print("\nUsing AND:")
+print(day == 17 and age >= 17)
+print("\nUsing OR:")
+print(day == 17 or age < 21)
+
+
+pizzas = ["hawaiian", 'peperoni']
+print("hawaiian" in pizzas)
+print("hawaiian" not in pizzas)
+
+
+
+
+
