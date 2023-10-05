@@ -21,30 +21,34 @@
 #     print("Your ticket is $15.")
 #
 #
-# prompt = "\nwhat is your favorite number?: "
+prompt = "\nwhat is your favorite number?: "
+prompt += "\n(Enter 'quit' when you finished.)"
+
+
+number = ""
+favorite_number = 20
+while True:
+    number = input(prompt)
+    if number.isnumeric():
+        favorite_number = int(number)
+    else:
+        print("thats not a number")
+        break
+    if number == 'quit' or favorite_number >= 20:
+        break
+    else:
+        print("I like that number!")
+
+
+# prompt = "\nfavorite color?: "
 # prompt += "\n(Enter 'quit' when you finished.)"
-#
-# number = ""
 #
 # active = True
 #
 # while True:
-#     number = input(prompt)
-#     if number == 'quit':
+#     color = input(prompt)
+#     if color == 'quit':
 #         break
-#     else:
-#         print("I like that number!")
-
-
-prompt = "\nfavorite color?: "
-prompt += "\n(Enter 'quit' when you finished.)"
-
-active = True
-
-while True:
-    color = input(prompt)
-    if color == 'quit':
-        break
 
 
 
